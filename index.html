@@ -13,7 +13,6 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-familuy: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
-.w3-button:hover{color:#000!important;background-color:#ffeb3b!important}
 
 .center {
   display: block;
@@ -21,6 +20,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   margin-right: auto;
   width: 65%;
 }
+
+h1,h2 {
+/*  color: #3f51b5;*/
+  display: inline;
+}
+
+h4,h5 {
+  display: inline;
+}
+
 </style>
 </head>
 <body>
@@ -29,54 +38,53 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="" class="w3-bar-item w3-button w3-padding-large w3-yellow w3-hover-white">Home</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Explore</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tasks</a>
     <a href="https://hltcoe.jhu.edu/research/scale/scale-2024/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SCALE 2024</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Tasks</a>
     <a href="https://hltcoe.jhu.edu/research/scale/scale-2024/" class="w3-bar-item w3-button w3-padding-large">SCALE 2024</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-blue w3-center" style="padding:70px 16px; margin-bottom:15px">
-  <h1 style="font-size:100px;padding-bottom:0px;margin-bottom:0px">MultiVENT</h1>
-  <p style="font-size:26px;padding-top:0px;margin-top:0px;margin-bottom:-5px">Multilingual Videos of Events with Aligned Natural Text</p>
-  <button style="width:150px;margin-right:20px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Paper</button>
-  <button style="width:150px;margin-left:20px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Download</button>
+<header class="w3-container w3-blue w3-center" style="padding:50px 16px 30px 16px; margin-bottom:15px">
+  <h1 style="font-size:100px;padding-bottom:0px;margin-bottom:-10px;color:#FFFFFF">MultiVENT</h1>
+  <p style="font-size:26px;padding-top:0px;margin-top:-15px;margin-bottom:5px">Multilingual Videos of Events with Aligned Natural Text</p>
+  <a href="https://arxiv.org/abs/2307.03153"><button style="width:150px;margin-right:20px" class="w3-button w3-yellow w3-padding-large w3-large w3-margin-top w3-hover-red">Paper</button></a>
+  <a href="https://github.com/katesanders9/multiVENT"><button style="width:150px;margin-left:20px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-red">Download</button></a>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-container">
-    <img class="center" style="margin-bottom:40px" src="images/a.png">
+    <img class="center" style="margin-bottom:20px;margin-top:20px;max-width:980px; min-width:500px" src="images/aa.png">
     <!--<img class="center" src="images/b.png">-->
 
   <div class="w3-content">
 
-      <h1>What is MultiVENT?</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h2 style="margin-right:10px">Everyday news coverage</h2>
+      <h4>has shifted from traditional broadcasts towards a wide range of presentation formats such as first-hand, unedited video footage. News agencies have adapted to this shift, often collecting and incorporating this online content into official broadcasts, but news video datasets still do not typically address this new domain of event coverage. As the topics covered by professional news coverage are not evenly distributed and many local events are underrepresented, one solution is to leverage information retrieval systems to retrieve information about local events from online. Datasets that reflect the diverse array of multimodal, multilingual news sources available online could be used to build such systems, supporting citizen journalism within local news groups and community organizations.</h4><br/><br/>
 
-      <img class="center" style="width:80%;margin-top:-20px;margin-bottom:-20px" src="images/b.png">
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1 style="margin-right:10px">What is <span style="color: #2196F3">MultiVENT</span>?</h1><br/>
+      <!--<img class="center" style="width:80%;margin-top:0px;margin-bottom:0px" src="images/b.png"><br/>-->
+      <h4 class="w3-padding-32">We present a dataset of over 2,000 diverse and semantically complex videos of multilingual, online current event coverage amounting to over 55 hours of footage. These videos are each paired with multilingual natural language video descriptions and long-form documents covering the events in detail. The dataset spans 260 diverse current events in total that take place in over forty countries during the last decade.</h4><br/><br/>
 
-        <img class="center" style="width:80%;margin-top:-20px;margin-bottom:-20px" src="images/e.png">
+<img class="center" style="width:80%;margin-top:0px;margin-bottom:0px" src="images/e.png"><br/>
+      
+      <h4 class="w3-padding-32">Above is an example of a data point in MultiVENT. Each data point consists of data anchored to a video depicting a current event – this video can be professionally produced by a news agency, or unprofessional footage uploaded to social media by a random person. The video is produced for speakers of one of our five target languages, in this case Arabic. The video comes with a paired text description in the same language, and up to two long-form text documents describing the current event of interest, usually from Wikipedia. There’s always an English document provided, and if the target language isn’t English, a document in that target language.</h4><br/><br/>
 
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+        
+
+        <h4 class="w3-padding-32">MultiVENT is a rich collection of diverse, multilingual data spanning visual, audio, and textual modalities. The dataset facilitates exciting multimodal research in information retrieval, question answering, video summarization, report generation, and more. The dataset uniquely motivates developing information extraction systems robust to lo-fi, low-information video content to better retrieve data from a wider variety of data formats.</h4><br/><br/><br/>
       </div></div>
 
-<div class="w3-container w3-blue w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge"><button style="margin-right:20px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Explore the dataset →</button> or   <button style="margin-left:20px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Explore dataset tasks →</button></h1>
+<div class="w3-container w3-blue w3-center  w3-padding-64">
+    <h1 class="w3-margin w3-xlarge"><a href=""><button style="margin-right:20px" class="w3-button w3-white w3-padding-large w3-large w3-hover-red">Explore the dataset →</button></a> or   <a href="https://arxiv.org/abs/2307.03153"><button style="margin-left:20px" class="w3-button w3-yellow w3-padding-large w3-large w3-hover-red">Check out the paper →</button></a></h1>
 </div>
 
 <!-- Footer -->
